@@ -8,9 +8,27 @@
     <div class="contiainer">
       <form id="form1" action="index.html" method="post">
         <div class="form-group">
-          <input id="zipInput" class="form-control "type="number" name="" value="" placeholder="Please enter your zip code">
-          <input id="distanceInput" class="form-control "type="number" min="0" max="100" placeholder="Please enter the distance radius in miles you would like to search">
-          <input id="manufacturerInput" class="form-control "type="text" name="" value="" placeholder="Please enter the manufacturer name">
+          <h4>Search for title:</h4>
+          <input id="titleInput" class="form-control "type="number" name="" value="" placeholder="Title search">
+          <br>
+          <h4>Select color:</h4>
+          <select class="form-control" id="colorInput">
+          <option value="Black">Black</option>
+          <option value="Blue">Blue</option>
+          <option value="Brown">Brown</option>
+          <option value="Green">Green</option>
+          <option value="Orange">Orange</option>
+          <option value="Pink">Pink</option>
+          <option value="Purple">Purple</option>
+          <option value="Red">Red</option>
+          <option value="Silver or Gray">Silver</option>
+          <option value="White">White</option>
+          <option value="Yellow">Yellow</option>
+          </select>
+          <br>
+          <input id="cityInput" class="form-control "type="text" name="" value="" placeholder="City">
+          <input id="stateInput" class="form-control "type="text" name="" value="" placeholder="State">
+          <input id="yearInput" class="form-control "type="text" name="" value="" placeholder="Year">
         </div>
         <button class="btn btn-info"type="submit" name="button">Submit</button>
       </form>

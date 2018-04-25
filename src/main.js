@@ -23,12 +23,16 @@ $(document).ready(function() {
   let getData = new GetData();
   $('#form1').submit(function(event){
     event.preventDefault();
-    let zip = $('#zipInput').val();
-    $('#zipInput').val("");
-    let distance = $('#distanceInput').val();
-    $('#distanceInput').val("");
-    let manufacturer = $('#manufacturerInput').val();
-    $('#manufacturerInput').val("");
-    getData.apiCall(zip, distance, manufacturer, displayBikes, showError);
+    let title = $('#titleInput').val();
+    $('#titleInput').val("");
+    let color = $('#colorInput').val();
+    $('#colorInput').val("");
+    let city = $('#cityInput').val();
+    $('#cityInput').val("");
+    let state = $('#stateInput').val();
+    $('#stateInput').val("");
+    let year = $('#yearInput').val();
+    $('#yearInput').val("");
+    getData.apiCall(title, color, city, state, year, displayBikes, showError);
   });
 });
