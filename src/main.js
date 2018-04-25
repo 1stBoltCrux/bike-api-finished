@@ -10,11 +10,10 @@ let showError = function () {
 }
 
 
-let displayBikes = function (response) {
-  let bikeArray = response.bikes;
+let displayBikes = function (bikeArray) {
   $('#output').empty();
   bikeArray.forEach(function(bike) {
-    $('#output').append(`<ul><li>${bike.title}</li><li>${bike.stolen_location}</li><li>${bike.frame_colors}</li><ul>`);
+    $('#output').append(`<ul><li>${bike.title}</li><li>${bike.stolen_location}</li><li>${bike.frame_colors}</li><li>${bike.year}</li><li>${bike.stolen}</li><ul>`);
   });
 }
 
@@ -31,8 +30,9 @@ $(document).ready(function() {
     $('#cityInput').val("");
     let state = $('#stateInput').val();
     $('#stateInput').val("");
-    let year = $('#yearInput').val();
+    let year = parseInt($('#yearInput').val());
     $('#yearInput').val("");
+    console.log(year);
     getData.apiCall(title, color, city, state, year, displayBikes, showError);
   });
 });

@@ -9,7 +9,7 @@
       <form id="form1" action="index.html" method="post">
         <div class="form-group">
           <h4>Search for title:</h4>
-          <input id="titleInput" class="form-control "type="number" name="" value="" placeholder="Title search">
+          <input id="titleInput" class="form-control "type="text" placeholder="Title search">
           <br>
           <h4>Select color:</h4>
           <select class="form-control" id="colorInput">
@@ -26,9 +26,9 @@
           <option value="Yellow">Yellow</option>
           </select>
           <br>
-          <input id="cityInput" class="form-control "type="text" name="" value="" placeholder="City">
-          <input id="stateInput" class="form-control "type="text" name="" value="" placeholder="State">
-          <input id="yearInput" class="form-control "type="text" name="" value="" placeholder="Year">
+          <input id="cityInput" class="form-control "type="text" placeholder="City">
+          <input id="stateInput" class="form-control "type="text" pattern="[A-Z]{2}" placeholder="State">
+          <input id="yearInput" class="form-control "type="number" min="1900" max="2018" placeholder="Year">
         </div>
         <button class="btn btn-info"type="submit" name="button">Submit</button>
       </form>
