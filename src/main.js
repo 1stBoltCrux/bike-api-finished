@@ -13,7 +13,7 @@ let showError = function () {
 let displayBikes = function (bikeArray) {
   $('#output').empty();
   bikeArray.forEach(function(bike) {
-    $('#output').append(`<ul><li>${bike.title}</li><li>${bike.stolen_location}</li><li>${bike.frame_colors}</li><li>${bike.year}</li><li>${bike.stolen}</li><ul>`);
+    $('#output').append(`<ul><li>${bike.title}</li><li>${bike.stolen_location}</li><li>${bike.frame_colors}</li><li>${bike.year}</li><li>${bike.stolen}</li><li>${bike.id}</li><ul>`);
   });
 }
 

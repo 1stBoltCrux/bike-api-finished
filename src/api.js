@@ -24,8 +24,28 @@ class FilterData {
       }
     }
     console.log(bikeArray.length);
+      bikeArray.sort(function(a,b){
+        if (a.id < b.id) {
+          return -1;
+        } else if (a.id > b.id) {
+          return 1;
+        } else {
+          return 0;
+        }
+
+      });
+  //   bikeArray.sort(function(a,b){
+  //     if (a.title < b.title) {
+  //       return -1;
+  //     } else if (a.title >  b.title) {
+  //       return 1;
+  //     } else {
+  //       return 0;
+  //     }
+  //   });
     return bikeArray;
   }
+
 
 }
 
